@@ -119,8 +119,24 @@ dist
 # TernJS port file
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 .vscode-test
+
+# IDEs and editors
+/.idea
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+git.properties
 
 # yarn v2
 .yarn/cache
@@ -128,3 +144,26 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# System Files
+.DS_Store
+Thumbs.db
+.vscode
+.npm/
+
+# Compiled output
+/dist
+**/dist
+/tmp
+/out-tsc
+/target
+
+# Misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+.npmrc
+./.husky/.commit
